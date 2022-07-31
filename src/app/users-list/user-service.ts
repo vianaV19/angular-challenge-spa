@@ -33,5 +33,11 @@ var USERS: User[] = [
         email: 'carlos@gmail.com',
         website: 'carlos.com.br',
         added_date: '11/02/2002'
+    },
+    {
+        name: 'matheus',
+        email: 'carlos@gmail.com',
+        website: 'carlos.com.br',
+        added_date: '11/02/2002'
     }
 ]

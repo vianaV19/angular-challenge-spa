@@ -10,6 +10,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AddUserComponent } from './add-user/add-user.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 @NgModule({
@@ -17,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     UsersListComponent,
     NavbarComponent,
+    AddUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,19 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    MatInputModule
+    MatInputModule,
+    MatFormFieldModule,
+    RouterModule.forRoot([
+      {
+        path: '',   redirectTo: '/home', pathMatch: 'full'
+      },
+      {
+        path: 'home', component: UsersListComponent
+      },
+      {
+        path: 'addUser', component: AddUserComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
