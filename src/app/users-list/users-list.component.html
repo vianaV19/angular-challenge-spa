@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form class="example-form">
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center">
+                        <label class="col-form-label" for="">Search For: </label>
+                    </div>
+                    <div class="col-10">
+                        <mat-form-field class="example-full-width w-100" appearance="fill">
+                            <mat-label>Name to Search</mat-label>
+                            <input matInput [(ngModel)]="filter"  placeholder="Ex. John Cannon" type="text" name="filter">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+            <button (click)="search()" class="h-75" mat-raised-button color="primary">Procurar</button>
+        </div>
+    </div>
+</div>
+
+<div class="thead">
+    <div class="title">
+        <input (click)="allUsersCheckbox()" type="checkbox" name="all-users">
+        <label>User details</label>
+    </div>
+    <div class="title">
+        <p>Role</p>
+    </div>
+    <div class="title">
+        <p>Department</p>
+    </div>
+    <div class="title">
+        <p>Submit Details</p>
+    </div>
+</div>
+
+<table id="users-list" class="table table-bordered">
+    <tbody *ngFor="let user of filteredList">
+        <tr>
+            <td class="user-container">
+                <input type="checkbox" name="user">
+                <img class="profile-img" src="https://picsum.photos/seed/picsum/300/300" alt="">
+
+                <div>
+                    <p class="lead">
+                        <a href=""> {{ user.name }}</a>
+                    </p>
+                    <p>
+                        {{ user.email }}
+                    </p>
+                    <p>
+                        <a href="">
+                            {{ user.website }}
+                        </a>
+                    </p>
+                    <p>
+                        <small>
+                            Added on {{ user.added_date }} 12:03pm
+                        </small>
+                    </p>
+                </div>
+            </td>
+            <td class="btns-container">
+                <button mat-raised-button color="primary">Edit</button>
+                <button mat-raised-button color="warn">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

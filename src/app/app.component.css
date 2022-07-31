@@ -1,0 +1,10 @@
+.add-user-container {
+    display: flex;
+    justify-content: end;
+    padding: 40px 20px;
+}
+
+
+button {
+    width: 250px;
+}
