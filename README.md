@@ -4,7 +4,7 @@
 
 ## :book: About Project
 
-Primeiro de tudo comecei adicionando o bootstrap no projeto para que eu possa montar o layout da pagina. Segundo lugar, escolhi 4 modulos do angular material, entre eles: Toolbar, Button, Input e o Form FIeld. Após importar os módulos eu utilizei o comando "ng g c" para criar os componentes da aplicação dentre eles 3: navbar, users-list e  add-user. Em seguida, implementei eles na aplicação, montei a tabela e o sistema de filtros utilizando mock object e configurei as rotas. Após tudo ficar e estilizado fiz o deploy e o resultado final ficou como esperado.  
+Primeiro de tudo comecei adicionando o bootstrap no projeto para que eu possa montar o layout da pagina. Segundo lugar, escolhi 4 modulos do angular material, entre eles: Toolbar, Button, Input e o Form FIeld. Após importar os módulos eu utilizei o comando "ng g c" para criar os componentes da aplicação dentre eles 3: navbar, users-list e  add-user. Em seguida, implementei eles na aplicação, montei a tabela e o sistema de filtros utilizando mock object e configurei as rotas (RouterModule). Após tudo ficar e estilizado fiz o deploy do app.  
 
 ---
 
