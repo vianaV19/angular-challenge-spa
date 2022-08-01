@@ -8,6 +8,12 @@ Primeiro de tudo comecei adicionando o bootstrap no projeto para que eu possa mo
 
 ---
 
+## View 
+
+<img src="https://github.com/vianaV19/angular-challenge-spa/blob/master/src/assets/angular-challenge-spa.gif" alt="angular challenge view" />
+
+---
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
